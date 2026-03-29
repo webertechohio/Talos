@@ -96,7 +96,11 @@ else
 fi
 
 # Build directories
-source_dir=$(build_directories "$build_dir/${BUILD_TARGET}" "wazuh*" $future)
+if [ -d "/wazuh-local-src" ]; then
+    source_dir=$(build_directories "$build_dir/${BUILD_TARGET}" "/wazuh-local-src" $future)
+else
+    source_dir=$(build_directories "$build_dir/${BUILD_TARGET}" "wazuh*" $future)
+fi
 
 wazuh_version=$(awk -F'"' '/"version"[ \t]*:/ {print $4; exit}' $source_dir/VERSION.json)
 # TODO: Improve how we handle package_name
