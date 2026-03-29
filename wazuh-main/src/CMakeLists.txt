@@ -253,8 +253,11 @@ if(IS_AGENT)
 endif()
 
 # Server-only modules
+option(ENGINE_BUILD "Build the experimental Wazuh engine" ON)
 if(NOT IS_AGENT)
-  add_subdirectory(engine)
+  if(ENGINE_BUILD)
+    add_subdirectory(engine)
+  endif()
   add_subdirectory(monitord)
   add_subdirectory(os_auth)
   add_subdirectory(remoted)

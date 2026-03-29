@@ -307,7 +307,8 @@ settings:
 	@echo "    CC                ${CC}"
 	@echo "    MAKE              ${MAKE}"
 
-# BUILD_CMAKE_PROJECTS+=build_wazuh_cmake
+# Re-enabled cmake but skips the experimental engine via -DENGINE_BUILD=OFF
+BUILD_CMAKE_PROJECTS+=build_wazuh_cmake
 
 ${WAZUH_LIB_OUTPUT_PATH}${LIBSTDCPP_NAME}: ${libstdc++_path}
 	mkdir -p ${WAZUH_LIB_OUTPUT_PATH}
@@ -362,7 +363,7 @@ winagent: ${WAZUH_LIB_OUTPUT_PATH}${LIBGCC_S_NAME} ${WAZUH_LIB_OUTPUT_PATH}${LIB
 #### Wazuh cmake ###
 
 build_wazuh_cmake:
-	mkdir -p build && cd build && cmake .. -DTARGET=${TARGET} ${CMAKE_OPTS} ${WAZUH_RELEASE_TYPE} ${WAZUH_TEST} ${CMAKE_ENGINE_OPTS} && ${MAKE}
+	mkdir -p build && cd build && cmake .. -DTARGET=${TARGET} ${CMAKE_OPTS} ${WAZUH_RELEASE_TYPE} ${WAZUH_TEST} -DENGINE_BUILD=OFF && ${MAKE}
 
 ####################
 #### External ######
@@ -705,6 +706,7 @@ else
 	mkdir -p ${WPYTHON_DIR}
 	cp external/${WPYTHON_TAR} ${WPYTHON_DIR}/${WPYTHON_TAR} && ${TAR} ${WPYTHON_DIR}/${WPYTHON_TAR} -C ${WPYTHON_DIR} && rm -rf ${WPYTHON_DIR}/${WPYTHON_TAR}
 endif
+	mkdir -p ${INSTALLDIR}/lib
 	find ${WPYTHON_DIR} -name "*${WLIBPYTHON}" -exec ln -f {} ${INSTALLDIR}/lib/${WLIBPYTHON} \;
 
 python_dependencies := requirements.txt
@@ -717,7 +719,7 @@ endif
 
 install_framework: install_python
 	cd ../framework && ${WPYTHON_DIR}/bin/python3 -m pip install . --use-pep517 --prefix=${WPYTHON_DIR} && rm -rf build/
-	chown -R root:${WAZUH_GROUP} ${WPYTHON_DIR}
+	chown -R root:${WAZUH_GROUP} ${WPYTHON_DIR} 2>/dev/null || true
 	chmod -R o=- ${WPYTHON_DIR}
 
 install_api: install_python
