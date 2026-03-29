@@ -53,7 +53,7 @@ override_dh_install:
 	USER_GENERATE_AUTHD_CERT="y" \
 	USER_AUTO_START="n" \
 	USER_CREATE_SSL_CERT="n" \
-	./install.sh || { echo "install.sh failed! Aborting." >&2; exit 1; }
+	sh ./install.sh || { echo "install.sh failed! Aborting." >&2; exit 1; }
 
 	# Copying init.d script
 	mkdir -p ${TARGET_DIR}/etc/init.d/
@@ -72,7 +72,7 @@ override_dh_install:
 	rm -rf $(INSTALLATION_DIR)/logs/*.log
 	rm -rf $(INSTALLATION_DIR)/logs/*.json
 
-	./gen_permissions.sh $(INSTALLATION_DIR)/ ${TARGET_DIR}$(INSTALLATION_SCRIPTS_DIR)/restore-permissions.sh
+	sh ./gen_permissions.sh $(INSTALLATION_DIR)/ ${TARGET_DIR}$(INSTALLATION_SCRIPTS_DIR)/restore-permissions.sh
 
 	# Copying to target
 	mkdir -p ${TARGET_DIR}$(INSTALLATION_DIR)/
