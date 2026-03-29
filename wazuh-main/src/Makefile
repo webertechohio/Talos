@@ -363,7 +363,7 @@ winagent: ${WAZUH_LIB_OUTPUT_PATH}${LIBGCC_S_NAME} ${WAZUH_LIB_OUTPUT_PATH}${LIB
 #### Wazuh cmake ###
 
 build_wazuh_cmake:
-	mkdir -p build && cd build && cmake .. -DTARGET=${TARGET} ${CMAKE_OPTS} ${WAZUH_RELEASE_TYPE} ${WAZUH_TEST} -DENGINE_BUILD=OFF && ${MAKE}
+	mkdir -p build && cd build && cmake .. -DTARGET=${TARGET} ${CMAKE_OPTS} ${WAZUH_RELEASE_TYPE} ${WAZUH_TEST} -DENGINE_BUILD=OFF && ${MAKE} wazuhext
 
 ####################
 #### External ######
