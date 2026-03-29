@@ -91,7 +91,8 @@ if [ ! -d "/wazuh-local-src" ] ; then
                           | grep '"sha"' | head -n 1| cut -d '"' -f 4 | cut -c 1-7)"
 else
       short_commit_hash="$(cd /wazuh-local-src && git rev-parse --short=7 HEAD)"
-      # FIX: Link the local source code mount to the expected 'wazuh' prefix for version detection
+      # FIX: Use the new JSON version file format for 4.9.0
+      wazuh_version=$(awk -F'"' '/"version"[ \t]*:/ {print $4}' /wazuh-local-src/VERSION.json)
       ln -s /wazuh-local-src wazuh-local-source
 fi
 
