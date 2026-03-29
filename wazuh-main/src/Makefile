@@ -325,14 +325,14 @@ ifeq (${MAKECMDGOALS},server)
 $(error Do not use 'server' directly, use 'TARGET=manager')
 endif
 server manager: ${CPPLIBDEPS}
-	${MAKE} ${BUILD_CMAKE_PROJECTS}
+	@if [ -n "${BUILD_CMAKE_PROJECTS}" ]; then ${MAKE} ${BUILD_CMAKE_PROJECTS}; fi
 
 ifeq (${MAKECMDGOALS},agent)
 $(error Do not use 'agent' directly, use 'TARGET=agent')
 endif
 
 agent: ${CPPLIBDEPS}
-	${MAKE} ${BUILD_CMAKE_PROJECTS}
+	@if [ -n "${BUILD_CMAKE_PROJECTS}" ]; then ${MAKE} ${BUILD_CMAKE_PROJECTS}; fi
 
 ifneq (,$(filter ${USE_SELINUX},YES yes y Y 1))
 server manager agent: selinux
