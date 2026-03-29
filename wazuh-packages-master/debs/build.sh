@@ -36,11 +36,12 @@ if [ ${build_target} = "api" ]; then
 else
     if [ "${local_source_code}" = "no" ]; then
         curl -sL https://github.com/wazuh/wazuh/tarball/${wazuh_branch} | tar zx
+        wazuh_version="$(cat wazuh*/src/VERSION | cut -d 'v' -f 2)"
     else
-        # FIX: Link the local source code mount to the expected 'wazuh' prefix for version detection
-        ln -s /wazuh-local-src wazuh-local
+        # FIX: Explicitly extract version and link from the mount point
+        wazuh_version="$(cat /wazuh-local-src/src/VERSION | cut -d 'v' -f 2)"
+        ln -s /wazuh-local-src wazuh-local-source
     fi
-    wazuh_version="$(cat wazuh*/src/VERSION | cut -d 'v' -f 2)"
 fi
 
 # Build directories
