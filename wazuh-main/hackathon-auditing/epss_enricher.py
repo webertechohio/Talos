@@ -38,6 +38,10 @@ def get_raw_wazuh_vulnerabilities():
 def enrich_and_store():
     """Runs the full CyberCNS-style scoring cycle."""
     print("Starting Background EPSS Vulnerability Enrichment Cycle...")
+    
+    # Ensure the destination directory exists
+    os.makedirs(os.path.dirname(ENRICHED_DB_PATH), exist_ok=True)
+    
     raw_vulns = get_raw_wazuh_vulnerabilities()
     enriched_data = []
     

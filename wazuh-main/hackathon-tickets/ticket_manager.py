@@ -11,6 +11,9 @@ if os.name == 'nt':
 
 def init_db():
     """Create the massive ecosystem schema if it doesn't exist."""
+    # Ensure the destination directory exists
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     

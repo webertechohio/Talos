@@ -105,5 +105,5 @@ def get_all_scripts():
 if __name__ == "__main__":
     # Ensure the standalone DB is created completely independent from the core Wazuh indexing logic
     ticket_manager.init_db()
-    # Runs the dedicated micro-api just for Hackathon Ticketing
-    app.run(host='0.0.0.0', port=55001, debug=True)
+    # Standardized Talos Ticketing Port for Dashboard Integration
+    app.run(host='0.0.0.0', port=5001, debug=True)
