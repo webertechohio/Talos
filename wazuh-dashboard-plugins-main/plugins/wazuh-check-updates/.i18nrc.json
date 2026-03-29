@@ -1,7 +1,0 @@
-{
-  "prefix": "wazuhCheckUpdates",
-  "paths": {
-    "wazuhCheckUpdates": "."
-  },
-  "translations": ["translations/en-US.json"]
-}
