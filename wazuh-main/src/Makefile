@@ -596,10 +596,11 @@ shared_modules/http-request.tar.gz:
 
 # Indexer plugin templates download
 # Get refs from get_git_refs.sh if INDEXER_PLUGINS_REFS is not set
+DEPS_VERSION = v4.9.0
 ifdef INDEXER_PLUGINS_REFS
 INDEXER_PLUGIN_REFS_LIST := $(INDEXER_PLUGINS_REFS)
 else
-INDEXER_PLUGIN_REFS_LIST := $(shell $(ROUTE_PATH)/../tools/get_git_refs.sh 2>/dev/null)
+INDEXER_PLUGIN_REFS_LIST := $(shell $(ROUTE_PATH)/../tools/get_git_refs.sh 2>/dev/null) v4.9.0 4.9 master
 endif
 
 $(INDEXER_PLUGINS_DIR):
