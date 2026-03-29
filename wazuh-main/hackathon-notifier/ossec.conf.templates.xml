@@ -1,0 +1,44 @@
+<!-- 
+  =============================================================================
+  TALOS NOTIFICATION ENGINE: OSSEC.CONF CUSTOM FILTERING TEMPLATES
+  These integration XML blocks go directly inside your 
+  /var/ossec/etc/ossec.conf file on the deployed AWS Ubuntu server.
+  =============================================================================
+-->
+
+<!-- 
+  FILTER SCENARIO 1: Absolute Criticality Filter
+  Only trigger the Talos Email/SMS script if the Alert Severity Level is >= 12.
+  This filters out 99% of normal audit logs so your phone doesn't get spammed.
+-->
+<integration>
+  <name>custom_notifier</name>
+  <hook_url>none</hook_url> <!-- Handled natively by our Python logic -->
+  <level>12</level>
+  <alert_format>json</alert_format>
+</integration>
+
+<!-- 
+  FILTER SCENARIO 2: Specific Rule Detection (The "Sniper" Rule)
+  Only trigger the Email/SMS if a very specific event occurs, regardless of level.
+  Example: Rule 100500 is the Custom Hackathon Canary File FIM rule we built earlier.
+-->
+<integration>
+  <name>custom_notifier</name>
+  <hook_url>none</hook_url>
+  <rule_id>100500</rule_id>
+  <alert_format>json</alert_format>
+</integration>
+
+<!-- 
+  FILTER SCENARIO 3: Asset Group Constraints
+  Only send texts/emails for a specific group of servers (like "Domain Controllers"),
+  and ONLY if the alert is Severity 10 or higher.
+-->
+<integration>
+  <name>custom_notifier</name>
+  <hook_url>none</hook_url>
+  <group>domain_controllers, production_databases</group>
+  <level>10</level>
+  <alert_format>json</alert_format>
+</integration>

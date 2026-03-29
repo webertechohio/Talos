@@ -1,0 +1,55 @@
+{
+  "project_talos_enterprise_rbac": {
+    "roles": [
+      {
+        "name": "Tier_1_Helpdesk",
+        "cluster_permissions": ["cluster_composite_ops_ro"],
+        "index_permissions": [
+          {
+            "index_patterns": [
+              "wazuh-alerts*"
+            ],
+            "allowed_actions": [
+              "read"
+            ],
+            "dls": "{\"bool\": {\"must\": {\"range\": {\"rule.level\": {\"lte\": 7}}}}}"
+          }
+        ],
+        "tenant_permissions": [
+          {
+            "tenant_patterns": [
+              "global_tenant"
+            ],
+            "allowed_actions": [
+              "kibana_all_read"
+            ]
+          }
+        ],
+        "description": "Lowest level tech support. Constrained by DLS to ONLY read Wazuh alerts under a level 7. Prevented physically from executing high-level Active Response Scripts."
+      },
+      {
+        "name": "SOC_Analyst",
+        "cluster_permissions": ["cluster_composite_ops"],
+        "index_permissions": [
+          {
+            "index_patterns": ["*"],
+            "allowed_actions": ["read", "write"]
+          }
+        ],
+        "tenant_permissions": [
+          {
+            "tenant_patterns": ["global_tenant"],
+            "allowed_actions": ["kibana_all_write"]
+          }
+        ],
+        "description": "Full unconstrained access to SIEM alerts, vulnerability auditing matrices, and remote execution scripts targeting ANY asset within the Level.io hierarchy."
+      }
+    ],
+    "action_groups": [
+      {
+        "name": "project_talos_read_only",
+        "allowed_actions": ["indices:data/read/mget", "indices:data/read/search"]
+      }
+    ]
+  }
+}

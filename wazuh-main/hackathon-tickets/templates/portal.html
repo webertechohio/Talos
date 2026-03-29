@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Helpdesk Portal</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .portal-box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 450px; text-align: left; }
+        h2 { color: #0056b3; margin-bottom: 5px; text-align: center; }
+        p.subtitle {text-align: center; color: #666; font-size: 14px; margin-bottom: 25px;}
+        label { font-weight: bold; margin-bottom: 5px; display: block; color: #333;}
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background 0.3s; }
+        button:hover { background-color: #218838; }
+        .message { color: green; margin-bottom: 15px; font-weight: bold; text-align: center;}
+        .logout {text-align: center; display: block; margin-top: 20px; color: #0056b3; text-decoration: none;}
+        .logout:hover {text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <div class="portal-box">
+        <h2>Submit an IT Ticket</h2>
+        <p class="subtitle">Secure Employee Support Channel</p>
+        
+        {% if success %}
+        <div class="message">{{ success }}</div>
+        {% endif %}
+        
+        <form method="POST" action="/support">
+            <label for="title">Issue Summary:</label>
+            <input type="text" id="title" name="title" placeholder="e.g. Broken Display, Cannot Login" required>
+            
+            <label for="description">Detailed Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Please describe your issue in detail..." required></textarea>
+            
+            <button type="submit">Submit Ticket</button>
+        </form>
+        <a href="/logout" class="logout">Secure Logout ({{ session['user'] }})</a>
+    </div>
+</body>
+</html>

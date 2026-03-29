@@ -1,0 +1,20 @@
+<group name="syscheck,canary_file,">
+  <!-- 
+    Rule to alert when a canary file is accessed or modified 
+    This works when FIM (syscheck) is monitoring the path:
+    /opt/wazuh-canary or C:\wazuh-canary
+  -->
+  <rule id="100500" level="12">
+    <if_matched_group>syscheck</if_matched_group>
+    <!-- We match the specific generic file paths for Canary -->
+    <match>wazuh-canary</match>
+    <!-- Ignore the wazuh agent creating the canary file -->
+    <options>alert_by_email</options>
+    <description>CRITICAL: Canary file accessed or modified. Potential compromise or lateral movement attempting to steal credentials.</description>
+    <group>canary_alert,attack_attempt,</group>
+    <mitre>
+        <id>T1003</id> <!-- OS Credential Dumping -->
+        <id>T1083</id> <!-- File and Directory Discovery -->
+    </mitre>
+  </rule>
+</group>
