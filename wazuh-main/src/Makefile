@@ -307,7 +307,7 @@ settings:
 	@echo "    CC                ${CC}"
 	@echo "    MAKE              ${MAKE}"
 
-BUILD_CMAKE_PROJECTS+=build_wazuh_cmake
+# BUILD_CMAKE_PROJECTS+=build_wazuh_cmake
 
 ${WAZUH_LIB_OUTPUT_PATH}${LIBSTDCPP_NAME}: ${libstdc++_path}
 	mkdir -p ${WAZUH_LIB_OUTPUT_PATH}
