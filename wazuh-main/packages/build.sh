@@ -90,10 +90,8 @@ if [ ! -d "/wazuh-local-src" ] ; then
     short_commit_hash="$(curl -s https://api.github.com/repos/wazuh/wazuh/commits/${WAZUH_BRANCH} \
                           | grep '"sha"' | head -n 1| cut -d '"' -f 4 | cut -c 1-7)"
 else
-      # FIX: Try to get the hash, but fallback to 'talos-1' if the .git folder is missing
-      short_commit_hash=$(cd /wazuh-local-src && git rev-parse --short=7 HEAD 2>/dev/null || echo "talos-1")
-      # FIX: Use the new JSON version file format for 4.9.0
-      wazuh_version=$(awk -F'"' '/"version"[ \t]*:/ {print $4}' /wazuh-local-src/VERSION.json)
+      # FIX: Add 'exit' to awk so it only grabs the FIRST version line (prevents the \n bug)
+      wazuh_version=$(awk -F'"' '/"version"[ \t]*:/ {print $4; exit}' /wazuh-local-src/VERSION.json)
       ln -s /wazuh-local-src wazuh-local-source
 fi
 
