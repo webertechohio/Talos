@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Export Table Csv component renders correctly to match the snapshot 1`] = `
+<ExportTableCsv
+  endpoint="/"
+  filters={Array []}
+  title=""
+  totalItems={0}
+>
+  <EuiFlexItem
+    grow={false}
+  >
+    <div
+      className="euiFlexItem euiFlexItem--flexGrowZero"
+    >
+      <EuiButtonEmpty
+        iconType="importAction"
+        isDisabled={true}
+        onClick={[Function]}
+      >
+        <button
+          className="euiButtonEmpty euiButtonEmpty--primary euiButtonEmpty-isDisabled"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
+        >
+          <EuiButtonContent
+            className="euiButtonEmpty__content"
+            iconGap="m"
+            iconSide="left"
+            iconSize="m"
+            iconType="importAction"
+            textProps={
+              Object {
+                "className": "euiButtonEmpty__text",
+              }
+            }
+          >
+            <span
+              className="euiButtonContent euiButtonEmpty__content"
+            >
+              <EuiIcon
+                className="euiButtonContent__icon"
+                color="inherit"
+                size="m"
+                type="importAction"
+              >
+                <span
+                  className="euiButtonContent__icon"
+                  color="inherit"
+                  data-euiicon-type="importAction"
+                  size="m"
+                />
+              </EuiIcon>
+              <span
+                className="euiButtonEmpty__text"
+              >
+                Export formatted
+              </span>
+            </span>
+          </EuiButtonContent>
+        </button>
+      </EuiButtonEmpty>
+    </div>
+  </EuiFlexItem>
+</ExportTableCsv>
+`;

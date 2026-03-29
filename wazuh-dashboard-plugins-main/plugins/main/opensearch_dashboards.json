@@ -1,0 +1,34 @@
+{
+  "id": "wazuh",
+  "version": "5.0.0-00",
+  "opensearchDashboardsVersion": "opensearchDashboards",
+  "configPath": ["wazuh"],
+  "requiredPlugins": [
+    "navigation",
+    "data",
+    "dashboard",
+    "embeddable",
+    "discover",
+    "inspector",
+    "visualizations",
+    "uiActions",
+    "charts",
+    "savedObjects",
+    "opensearchDashboardsReact",
+    "opensearchDashboardsUtils",
+    "opensearchDashboardsLegacy",
+    "wazuhCheckUpdates",
+    "wazuhCore"
+  ],
+  "optionalPlugins": [
+    "security",
+    "securityDashboards",
+    "searchguard",
+    "telemetry",
+    "notificationsDashboards",
+    "alertingDashboards",
+    "reportsDashboards"
+  ],
+  "server": true,
+  "ui": true
+}

@@ -1,0 +1,25 @@
+{
+  "data": {
+    "affected_items": [
+      {
+        "rootcheck": {
+          "disabled": "no",
+          "base_directory": "",
+          "scanall": "no",
+          "skip_nfs": "yes",
+          "frequency": 43200,
+          "check_dev": "yes",
+          "check_if": "yes",
+          "check_pids": "yes",
+          "check_ports": "yes",
+          "check_sys": "yes"
+        }
+      }
+    ],
+    "total_affected_items": 1,
+    "total_failed_items": 0,
+    "failed_items": []
+  },
+  "message": "Active configuration was successfully read in specified node",
+  "error": 0
+}

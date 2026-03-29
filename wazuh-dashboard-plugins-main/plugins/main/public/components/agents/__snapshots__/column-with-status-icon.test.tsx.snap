@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColumnWithStatusIcon component Renders status indicator with the its color and the label 1`] = `
+Array [
+  <span
+    class="euiToolTipAnchor"
+  >
+    <div
+      class="euiHealth euiHealth--textSizeS wz-flex"
+    >
+      <div
+        class="euiFlexGroup euiFlexGroup--gutterExtraSmall euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow"
+      >
+        <div
+          class="euiFlexItem euiFlexItem--flexGrowZero"
+        >
+          <span
+            color="success"
+            data-euiicon-type="dot"
+          />
+        </div>
+        <div
+          class="euiFlexItem euiFlexItem--flexGrowZero"
+        />
+      </div>
+    </div>
+  </span>,
+  <span
+    class="hide-agent-status"
+  >
+    Active
+  </span>,
+]
+`;

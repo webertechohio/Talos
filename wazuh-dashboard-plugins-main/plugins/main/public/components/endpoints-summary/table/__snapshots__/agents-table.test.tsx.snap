@@ -1,0 +1,1810 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AgentsTable component Renders correctly to match the snapshot 1`] = `
+<div>
+  <div
+    class="euiPanel euiPanel--paddingMedium euiPanel--borderRadiusMedium euiPanel--plain euiPanel--hasShadow"
+  >
+    <div
+      class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--directionRow euiFlexGroup--responsive wz-overflow-auto"
+    >
+      <div
+        class="euiFlexItem"
+      >
+        <div
+          class="euiFlexGroup euiFlexGroup--gutterSmall euiFlexGroup--directionColumn"
+        >
+          <div
+            class="euiFlexItem"
+          >
+            <div
+              class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+            >
+              <div
+                class="euiFlexItem"
+              >
+                <div
+                  class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+                >
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero wz-flex-basis-auto"
+                  >
+                    <h1
+                      class="euiTitle euiTitle--small"
+                      data-test-subj="table-wz-api-title"
+                    >
+                      Agents 
+                      <span>
+                        (0)
+                      </span>
+                    </h1>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero wz-flex-basis-auto"
+                  >
+                    <div
+                      class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="euiFlexItem euiFlexItem--flexGrowZero"
+              >
+                <div
+                  class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+                >
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <a
+                        class="euiButtonEmpty euiButtonEmpty--primary"
+                        href="http://url"
+                        rel="noreferrer"
+                      >
+                        <span
+                          class="euiButtonContent euiButtonEmpty__content"
+                        >
+                          <span
+                            class="euiButtonContent__icon"
+                            color="inherit"
+                            data-euiicon-type="plusInCircle"
+                          />
+                          <span
+                            class="euiButtonEmpty__text"
+                          >
+                            Deploy new agent
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <button
+                      class="euiButtonEmpty euiButtonEmpty--primary"
+                      type="button"
+                    >
+                      <span
+                        class="euiButtonContent euiButtonEmpty__content"
+                      >
+                        <span
+                          class="euiButtonContent__icon"
+                          color="inherit"
+                          data-euiicon-type="refresh"
+                        />
+                        <span
+                          class="euiButtonEmpty__text"
+                        >
+                          Refresh
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <button
+                      class="euiButtonEmpty euiButtonEmpty--primary euiButtonEmpty-isDisabled"
+                      disabled=""
+                      type="button"
+                    >
+                      <span
+                        class="euiButtonContent euiButtonEmpty__content"
+                      >
+                        <span
+                          class="euiButtonContent__icon"
+                          color="inherit"
+                          data-euiicon-type="importAction"
+                        />
+                        <span
+                          class="euiButtonEmpty__text"
+                        >
+                          Export formatted
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <div
+                      class="euiPopover euiPopover--anchorDownLeft"
+                      id="agentsTableGlobalActions"
+                    >
+                      <div
+                        class="euiPopover__anchor"
+                      >
+                        <button
+                          class="euiButtonEmpty euiButtonEmpty--primary"
+                          type="button"
+                        >
+                          <span
+                            class="euiButtonContent euiButtonContent--iconRight euiButtonEmpty__content"
+                          >
+                            <span
+                              class="euiButtonContent__icon"
+                              color="inherit"
+                              data-euiicon-type="arrowDown"
+                            />
+                            <span
+                              class="euiButtonEmpty__text"
+                            >
+                              More
+                            </span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <span
+                      class="euiToolTipAnchor"
+                    >
+                      <button
+                        class="euiButtonEmpty euiButtonEmpty--primary"
+                        type="button"
+                      >
+                        <span
+                          class="euiButtonContent euiButtonEmpty__content"
+                        >
+                          <span
+                            class="euiButtonEmpty__text"
+                          >
+                            <span
+                              color="primary"
+                              data-euiicon-type="managementApp"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="euiFlexItem"
+          />
+          <div
+            class="euiFlexItem"
+          >
+            <div>
+              <div
+                class="euiSuggestInput"
+              >
+                <div
+                  class="euiPopover euiPopover--anchorDownLeft euiPopover--displayBlock euiInputPopover euiInputPopover--fullWidth"
+                  id="popover"
+                >
+                  <div
+                    class="euiPopover__anchor"
+                  >
+                    <div>
+                      <div
+                        class="euiFormControlLayout euiFormControlLayout--fullWidth euiFormControlLayout--group"
+                      >
+                        <div
+                          class="euiFormControlLayout__childrenWrapper"
+                        >
+                          <input
+                            class="euiFieldText euiFieldText--fullWidth euiFieldText--inGroup"
+                            placeholder="Search"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                        <div
+                          class="euiPopover euiPopover--anchorDownCenter euiFormControlLayout__append"
+                        >
+                          <div
+                            class="euiPopover__anchor"
+                          >
+                            <button
+                              class="euiButtonEmpty euiButtonEmpty--primary"
+                              type="button"
+                            >
+                              <span
+                                class="euiButtonContent euiButtonEmpty__content"
+                              >
+                                <span
+                                  class="euiButtonEmpty__text"
+                                >
+                                  WQL
+                                </span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="euiSpacer euiSpacer--s"
+            />
+            <div
+              class="euiBasicTable"
+              data-test-subj="table-with-search-bar"
+            >
+              <div>
+                <div
+                  class="euiTableHeaderMobile"
+                >
+                  <div
+                    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsBaseline euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow"
+                  >
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <div
+                        class="euiCheckbox"
+                      >
+                        <input
+                          aria-label="Select all rows"
+                          class="euiCheckbox__input"
+                          disabled=""
+                          id="_selection_column-checkbox_htmlId"
+                          type="checkbox"
+                        />
+                        <div
+                          class="euiCheckbox__square"
+                        />
+                        <label
+                          class="euiCheckbox__label"
+                          for="_selection_column-checkbox_htmlId"
+                        >
+                          Select all rows
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <div
+                        class="euiTableSortMobile"
+                      >
+                        <div
+                          class="euiPopover euiPopover--anchorDownRight"
+                        >
+                          <div
+                            class="euiPopover__anchor"
+                          >
+                            <button
+                              class="euiButtonEmpty euiButtonEmpty--primary euiButtonEmpty--xSmall euiButtonEmpty--flushRight"
+                              type="button"
+                            >
+                              <span
+                                class="euiButtonContent euiButtonContent--iconRight euiButtonEmpty__content"
+                              >
+                                <span
+                                  class="euiButtonContent__icon"
+                                  color="inherit"
+                                  data-euiicon-type="arrowDown"
+                                />
+                                <span
+                                  class="euiButtonEmpty__text"
+                                >
+                                  Sorting
+                                </span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table
+                  class="euiTable euiTable--responsive euiTable--auto"
+                  id="htmlId"
+                  tabindex="-1"
+                >
+                  <caption
+                    class="euiScreenReaderOnly euiTableCaption"
+                  />
+                  <thead>
+                    <tr>
+                      <th
+                        class="euiTableHeaderCellCheckbox"
+                        scope="col"
+                      >
+                        <div
+                          class="euiTableCellContent"
+                        >
+                          <div
+                            class="euiCheckbox euiCheckbox--inList euiCheckbox--noLabel"
+                          >
+                            <input
+                              aria-label="Select all rows"
+                              class="euiCheckbox__input"
+                              data-test-subj="checkboxSelectAll"
+                              disabled=""
+                              id="_selection_column-checkbox_htmlId"
+                              type="checkbox"
+                            />
+                            <div
+                              class="euiCheckbox__square"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="ascending"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_id_0"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton euiTableHeaderButton-isSorted"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              ID
+                            </span>
+                            <span
+                              class="euiTableSortIcon"
+                              data-euiicon-type="sortUp"
+                            />
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_name_1"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Name
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_ip_2"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              IP address
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_group_3"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Group(s)
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_os.name,os.version_4"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Operating system
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_node_name_5"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Cluster node
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_version_6"
+                        role="columnheader"
+                        scope="col"
+                        style="width:100px"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Version
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_status_7"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Status
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        class="euiTableHeaderCell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <span
+                          class="euiTableCellContent euiTableCellContent--alignRight"
+                        >
+                          <span
+                            class="euiTableCellContent__text"
+                          >
+                            Actions
+                          </span>
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="euiTableRow"
+                    >
+                      <td
+                        class="euiTableRowCell euiTableRowCell--isMobileFullWidth"
+                        colspan="10"
+                      >
+                        <div
+                          class="euiTableCellContent euiTableCellContent--alignCenter"
+                        >
+                          <span
+                            class="euiTableCellContent__text"
+                          >
+                            No items found
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AgentsTable component Renders correctly to match the snapshot with custom columns 1`] = `
+<div>
+  <div
+    class="euiPanel euiPanel--paddingMedium euiPanel--borderRadiusMedium euiPanel--plain euiPanel--hasShadow"
+  >
+    <div
+      class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--directionRow euiFlexGroup--responsive wz-overflow-auto"
+    >
+      <div
+        class="euiFlexItem"
+      >
+        <div
+          class="euiFlexGroup euiFlexGroup--gutterSmall euiFlexGroup--directionColumn"
+        >
+          <div
+            class="euiFlexItem"
+          >
+            <div
+              class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+            >
+              <div
+                class="euiFlexItem"
+              >
+                <div
+                  class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+                >
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero wz-flex-basis-auto"
+                  >
+                    <h1
+                      class="euiTitle euiTitle--small"
+                      data-test-subj="table-wz-api-title"
+                    >
+                      Agents 
+                      <span>
+                        (0)
+                      </span>
+                    </h1>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero wz-flex-basis-auto"
+                  >
+                    <div
+                      class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="euiFlexItem euiFlexItem--flexGrowZero"
+              >
+                <div
+                  class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+                >
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <a
+                        class="euiButtonEmpty euiButtonEmpty--primary"
+                        href="http://url"
+                        rel="noreferrer"
+                      >
+                        <span
+                          class="euiButtonContent euiButtonEmpty__content"
+                        >
+                          <span
+                            class="euiButtonContent__icon"
+                            color="inherit"
+                            data-euiicon-type="plusInCircle"
+                          />
+                          <span
+                            class="euiButtonEmpty__text"
+                          >
+                            Deploy new agent
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <button
+                      class="euiButtonEmpty euiButtonEmpty--primary"
+                      type="button"
+                    >
+                      <span
+                        class="euiButtonContent euiButtonEmpty__content"
+                      >
+                        <span
+                          class="euiButtonContent__icon"
+                          color="inherit"
+                          data-euiicon-type="refresh"
+                        />
+                        <span
+                          class="euiButtonEmpty__text"
+                        >
+                          Refresh
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <button
+                      class="euiButtonEmpty euiButtonEmpty--primary euiButtonEmpty-isDisabled"
+                      disabled=""
+                      type="button"
+                    >
+                      <span
+                        class="euiButtonContent euiButtonEmpty__content"
+                      >
+                        <span
+                          class="euiButtonContent__icon"
+                          color="inherit"
+                          data-euiicon-type="importAction"
+                        />
+                        <span
+                          class="euiButtonEmpty__text"
+                        >
+                          Export formatted
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <div
+                      class="euiPopover euiPopover--anchorDownLeft"
+                      id="agentsTableGlobalActions"
+                    >
+                      <div
+                        class="euiPopover__anchor"
+                      >
+                        <button
+                          class="euiButtonEmpty euiButtonEmpty--primary"
+                          type="button"
+                        >
+                          <span
+                            class="euiButtonContent euiButtonContent--iconRight euiButtonEmpty__content"
+                          >
+                            <span
+                              class="euiButtonContent__icon"
+                              color="inherit"
+                              data-euiicon-type="arrowDown"
+                            />
+                            <span
+                              class="euiButtonEmpty__text"
+                            >
+                              More
+                            </span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <span
+                      class="euiToolTipAnchor"
+                    >
+                      <button
+                        class="euiButtonEmpty euiButtonEmpty--primary"
+                        type="button"
+                      >
+                        <span
+                          class="euiButtonContent euiButtonEmpty__content"
+                        >
+                          <span
+                            class="euiButtonEmpty__text"
+                          >
+                            <span
+                              color="primary"
+                              data-euiicon-type="managementApp"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="euiFlexItem"
+          />
+          <div
+            class="euiFlexItem"
+          >
+            <div>
+              <div
+                class="euiSuggestInput"
+              >
+                <div
+                  class="euiPopover euiPopover--anchorDownLeft euiPopover--displayBlock euiInputPopover euiInputPopover--fullWidth"
+                  id="popover"
+                >
+                  <div
+                    class="euiPopover__anchor"
+                  >
+                    <div>
+                      <div
+                        class="euiFormControlLayout euiFormControlLayout--fullWidth euiFormControlLayout--group"
+                      >
+                        <div
+                          class="euiFormControlLayout__childrenWrapper"
+                        >
+                          <input
+                            class="euiFieldText euiFieldText--fullWidth euiFieldText--inGroup"
+                            placeholder="Search"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                        <div
+                          class="euiPopover euiPopover--anchorDownCenter euiFormControlLayout__append"
+                        >
+                          <div
+                            class="euiPopover__anchor"
+                          >
+                            <button
+                              class="euiButtonEmpty euiButtonEmpty--primary"
+                              type="button"
+                            >
+                              <span
+                                class="euiButtonContent euiButtonEmpty__content"
+                              >
+                                <span
+                                  class="euiButtonEmpty__text"
+                                >
+                                  WQL
+                                </span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="euiSpacer euiSpacer--s"
+            />
+            <div
+              class="euiBasicTable"
+              data-test-subj="table-with-search-bar"
+            >
+              <div>
+                <div
+                  class="euiTableHeaderMobile"
+                >
+                  <div
+                    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsBaseline euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow"
+                  >
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <div
+                        class="euiCheckbox"
+                      >
+                        <input
+                          aria-label="Select all rows"
+                          class="euiCheckbox__input"
+                          disabled=""
+                          id="_selection_column-checkbox_htmlId"
+                          type="checkbox"
+                        />
+                        <div
+                          class="euiCheckbox__square"
+                        />
+                        <label
+                          class="euiCheckbox__label"
+                          for="_selection_column-checkbox_htmlId"
+                        >
+                          Select all rows
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <div
+                        class="euiTableSortMobile"
+                      >
+                        <div
+                          class="euiPopover euiPopover--anchorDownRight"
+                        >
+                          <div
+                            class="euiPopover__anchor"
+                          >
+                            <button
+                              class="euiButtonEmpty euiButtonEmpty--primary euiButtonEmpty--xSmall euiButtonEmpty--flushRight"
+                              type="button"
+                            >
+                              <span
+                                class="euiButtonContent euiButtonContent--iconRight euiButtonEmpty__content"
+                              >
+                                <span
+                                  class="euiButtonContent__icon"
+                                  color="inherit"
+                                  data-euiicon-type="arrowDown"
+                                />
+                                <span
+                                  class="euiButtonEmpty__text"
+                                >
+                                  Sorting
+                                </span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table
+                  class="euiTable euiTable--responsive euiTable--auto"
+                  id="htmlId"
+                  tabindex="-1"
+                >
+                  <caption
+                    class="euiScreenReaderOnly euiTableCaption"
+                  />
+                  <thead>
+                    <tr>
+                      <th
+                        class="euiTableHeaderCellCheckbox"
+                        scope="col"
+                      >
+                        <div
+                          class="euiTableCellContent"
+                        >
+                          <div
+                            class="euiCheckbox euiCheckbox--inList euiCheckbox--noLabel"
+                          >
+                            <input
+                              aria-label="Select all rows"
+                              class="euiCheckbox__input"
+                              data-test-subj="checkboxSelectAll"
+                              disabled=""
+                              id="_selection_column-checkbox_htmlId"
+                              type="checkbox"
+                            />
+                            <div
+                              class="euiCheckbox__square"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="ascending"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_id_0"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton euiTableHeaderButton-isSorted"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              ID
+                            </span>
+                            <span
+                              class="euiTableSortIcon"
+                              data-euiicon-type="sortUp"
+                            />
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_name_1"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Name
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_ip_2"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              IP address
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_group_3"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Group(s)
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_os.name,os.version_4"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Operating system
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_node_name_5"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Cluster node
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_version_6"
+                        role="columnheader"
+                        scope="col"
+                        style="width:100px"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Version
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_status_7"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Status
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        class="euiTableHeaderCell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <span
+                          class="euiTableCellContent euiTableCellContent--alignRight"
+                        >
+                          <span
+                            class="euiTableCellContent__text"
+                          >
+                            Actions
+                          </span>
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="euiTableRow"
+                    >
+                      <td
+                        class="euiTableRowCell euiTableRowCell--isMobileFullWidth"
+                        colspan="10"
+                      >
+                        <div
+                          class="euiTableCellContent euiTableCellContent--alignCenter"
+                        >
+                          <span
+                            class="euiTableCellContent__text"
+                          >
+                            No items found
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AgentsTable component Renders correctly to match the snapshot with no predefined columns selected 1`] = `
+<div>
+  <div
+    class="euiPanel euiPanel--paddingMedium euiPanel--borderRadiusMedium euiPanel--plain euiPanel--hasShadow"
+  >
+    <div
+      class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--directionRow euiFlexGroup--responsive wz-overflow-auto"
+    >
+      <div
+        class="euiFlexItem"
+      >
+        <div
+          class="euiFlexGroup euiFlexGroup--gutterSmall euiFlexGroup--directionColumn"
+        >
+          <div
+            class="euiFlexItem"
+          >
+            <div
+              class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+            >
+              <div
+                class="euiFlexItem"
+              >
+                <div
+                  class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+                >
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero wz-flex-basis-auto"
+                  >
+                    <h1
+                      class="euiTitle euiTitle--small"
+                      data-test-subj="table-wz-api-title"
+                    >
+                      Agents 
+                      <span>
+                        (0)
+                      </span>
+                    </h1>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero wz-flex-basis-auto"
+                  >
+                    <div
+                      class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--responsive"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="euiFlexItem euiFlexItem--flexGrowZero"
+              >
+                <div
+                  class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow euiFlexGroup--wrap"
+                >
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <a
+                        class="euiButtonEmpty euiButtonEmpty--primary"
+                        href="http://url"
+                        rel="noreferrer"
+                      >
+                        <span
+                          class="euiButtonContent euiButtonEmpty__content"
+                        >
+                          <span
+                            class="euiButtonContent__icon"
+                            color="inherit"
+                            data-euiicon-type="plusInCircle"
+                          />
+                          <span
+                            class="euiButtonEmpty__text"
+                          >
+                            Deploy new agent
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <button
+                      class="euiButtonEmpty euiButtonEmpty--primary"
+                      type="button"
+                    >
+                      <span
+                        class="euiButtonContent euiButtonEmpty__content"
+                      >
+                        <span
+                          class="euiButtonContent__icon"
+                          color="inherit"
+                          data-euiicon-type="refresh"
+                        />
+                        <span
+                          class="euiButtonEmpty__text"
+                        >
+                          Refresh
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <button
+                      class="euiButtonEmpty euiButtonEmpty--primary euiButtonEmpty-isDisabled"
+                      disabled=""
+                      type="button"
+                    >
+                      <span
+                        class="euiButtonContent euiButtonEmpty__content"
+                      >
+                        <span
+                          class="euiButtonContent__icon"
+                          color="inherit"
+                          data-euiicon-type="importAction"
+                        />
+                        <span
+                          class="euiButtonEmpty__text"
+                        >
+                          Export formatted
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <div
+                      class="euiPopover euiPopover--anchorDownLeft"
+                      id="agentsTableGlobalActions"
+                    >
+                      <div
+                        class="euiPopover__anchor"
+                      >
+                        <button
+                          class="euiButtonEmpty euiButtonEmpty--primary"
+                          type="button"
+                        >
+                          <span
+                            class="euiButtonContent euiButtonContent--iconRight euiButtonEmpty__content"
+                          >
+                            <span
+                              class="euiButtonContent__icon"
+                              color="inherit"
+                              data-euiicon-type="arrowDown"
+                            />
+                            <span
+                              class="euiButtonEmpty__text"
+                            >
+                              More
+                            </span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="euiFlexItem euiFlexItem--flexGrowZero"
+                  >
+                    <span
+                      class="euiToolTipAnchor"
+                    >
+                      <button
+                        class="euiButtonEmpty euiButtonEmpty--primary"
+                        type="button"
+                      >
+                        <span
+                          class="euiButtonContent euiButtonEmpty__content"
+                        >
+                          <span
+                            class="euiButtonEmpty__text"
+                          >
+                            <span
+                              color="primary"
+                              data-euiicon-type="managementApp"
+                            />
+                          </span>
+                        </span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="euiFlexItem"
+          />
+          <div
+            class="euiFlexItem"
+          >
+            <div>
+              <div
+                class="euiSuggestInput"
+              >
+                <div
+                  class="euiPopover euiPopover--anchorDownLeft euiPopover--displayBlock euiInputPopover euiInputPopover--fullWidth"
+                  id="popover"
+                >
+                  <div
+                    class="euiPopover__anchor"
+                  >
+                    <div>
+                      <div
+                        class="euiFormControlLayout euiFormControlLayout--fullWidth euiFormControlLayout--group"
+                      >
+                        <div
+                          class="euiFormControlLayout__childrenWrapper"
+                        >
+                          <input
+                            class="euiFieldText euiFieldText--fullWidth euiFieldText--inGroup"
+                            placeholder="Search"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                        <div
+                          class="euiPopover euiPopover--anchorDownCenter euiFormControlLayout__append"
+                        >
+                          <div
+                            class="euiPopover__anchor"
+                          >
+                            <button
+                              class="euiButtonEmpty euiButtonEmpty--primary"
+                              type="button"
+                            >
+                              <span
+                                class="euiButtonContent euiButtonEmpty__content"
+                              >
+                                <span
+                                  class="euiButtonEmpty__text"
+                                >
+                                  WQL
+                                </span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="euiSpacer euiSpacer--s"
+            />
+            <div
+              class="euiBasicTable"
+              data-test-subj="table-with-search-bar"
+            >
+              <div>
+                <div
+                  class="euiTableHeaderMobile"
+                >
+                  <div
+                    class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsBaseline euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow"
+                  >
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <div
+                        class="euiCheckbox"
+                      >
+                        <input
+                          aria-label="Select all rows"
+                          class="euiCheckbox__input"
+                          disabled=""
+                          id="_selection_column-checkbox_htmlId"
+                          type="checkbox"
+                        />
+                        <div
+                          class="euiCheckbox__square"
+                        />
+                        <label
+                          class="euiCheckbox__label"
+                          for="_selection_column-checkbox_htmlId"
+                        >
+                          Select all rows
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="euiFlexItem euiFlexItem--flexGrowZero"
+                    >
+                      <div
+                        class="euiTableSortMobile"
+                      >
+                        <div
+                          class="euiPopover euiPopover--anchorDownRight"
+                        >
+                          <div
+                            class="euiPopover__anchor"
+                          >
+                            <button
+                              class="euiButtonEmpty euiButtonEmpty--primary euiButtonEmpty--xSmall euiButtonEmpty--flushRight"
+                              type="button"
+                            >
+                              <span
+                                class="euiButtonContent euiButtonContent--iconRight euiButtonEmpty__content"
+                              >
+                                <span
+                                  class="euiButtonContent__icon"
+                                  color="inherit"
+                                  data-euiicon-type="arrowDown"
+                                />
+                                <span
+                                  class="euiButtonEmpty__text"
+                                >
+                                  Sorting
+                                </span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table
+                  class="euiTable euiTable--responsive euiTable--auto"
+                  id="htmlId"
+                  tabindex="-1"
+                >
+                  <caption
+                    class="euiScreenReaderOnly euiTableCaption"
+                  />
+                  <thead>
+                    <tr>
+                      <th
+                        class="euiTableHeaderCellCheckbox"
+                        scope="col"
+                      >
+                        <div
+                          class="euiTableCellContent"
+                        >
+                          <div
+                            class="euiCheckbox euiCheckbox--inList euiCheckbox--noLabel"
+                          >
+                            <input
+                              aria-label="Select all rows"
+                              class="euiCheckbox__input"
+                              data-test-subj="checkboxSelectAll"
+                              disabled=""
+                              id="_selection_column-checkbox_htmlId"
+                              type="checkbox"
+                            />
+                            <div
+                              class="euiCheckbox__square"
+                            />
+                          </div>
+                        </div>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="ascending"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_id_0"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton euiTableHeaderButton-isSorted"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              ID
+                            </span>
+                            <span
+                              class="euiTableSortIcon"
+                              data-euiicon-type="sortUp"
+                            />
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_name_1"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Name
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_ip_2"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              IP address
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_group_3"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Group(s)
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_os.name,os.version_4"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Operating system
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_node_name_5"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Cluster node
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_version_6"
+                        role="columnheader"
+                        scope="col"
+                        style="width:100px"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Version
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        aria-live="polite"
+                        aria-sort="none"
+                        class="euiTableHeaderCell"
+                        data-test-subj="tableHeaderCell_status_7"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <button
+                          class="euiTableHeaderButton"
+                          data-test-subj="tableHeaderSortButton"
+                          type="button"
+                        >
+                          <span
+                            class="euiTableCellContent"
+                          >
+                            <span
+                              class="euiTableCellContent__text"
+                            >
+                              Status
+                            </span>
+                          </span>
+                        </button>
+                      </th>
+                      <th
+                        class="euiTableHeaderCell"
+                        role="columnheader"
+                        scope="col"
+                      >
+                        <span
+                          class="euiTableCellContent euiTableCellContent--alignRight"
+                        >
+                          <span
+                            class="euiTableCellContent__text"
+                          >
+                            Actions
+                          </span>
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="euiTableRow"
+                    >
+                      <td
+                        class="euiTableRowCell euiTableRowCell--isMobileFullWidth"
+                        colspan="10"
+                      >
+                        <div
+                          class="euiTableCellContent euiTableCellContent--alignCenter"
+                        >
+                          <span
+                            class="euiTableCellContent__text"
+                          >
+                            No items found
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

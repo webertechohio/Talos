@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AgentsTableGlobalActions component should return the component 1`] = `
+<div>
+  <div
+    class="euiPopover euiPopover--anchorDownLeft"
+    id="agentsTableGlobalActions"
+  >
+    <div
+      class="euiPopover__anchor"
+    >
+      <button
+        class="euiButtonEmpty euiButtonEmpty--primary"
+        type="button"
+      >
+        <span
+          class="euiButtonContent euiButtonContent--iconRight euiButtonEmpty__content"
+        >
+          <span
+            class="euiButtonContent__icon"
+            color="inherit"
+            data-euiicon-type="arrowDown"
+          />
+          <span
+            class="euiButtonEmpty__text"
+          >
+            More
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

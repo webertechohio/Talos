@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UpdateDetail component should return the UpdateDetail component 1`] = `
+<div>
+  <div
+    class="euiAccordion euiAccordionForm"
+  >
+    <div
+      class="euiAccordion__triggerWrapper"
+    >
+      <button
+        aria-controls="v4.8.0"
+        aria-expanded="false"
+        class="euiAccordion__button euiAccordionForm__button"
+        id="htmlId"
+        type="button"
+      >
+        <span
+          class="euiAccordion__iconWrapper"
+        >
+          <span
+            class="euiAccordion__icon"
+            data-euiicon-type="arrowRight"
+          />
+        </span>
+        <span
+          class="euiIEFlexWrapFix"
+        >
+          <div
+            class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--directionRow"
+          >
+            <div
+              class="euiFlexItem euiFlexItem--flexGrowZero"
+            >
+              <h3
+                class="euiTitle euiTitle--small euiAccordionForm__title"
+              >
+                Wazuh v4.8.0
+              </h3>
+            </div>
+            <div
+              class="euiFlexItem euiFlexItem--flexGrowZero"
+            >
+              <span
+                class="euiBadge euiBadge--hollow euiBadge--iconLeft"
+                title="Last available minor"
+              >
+                <span
+                  class="euiBadge__content"
+                >
+                  <span
+                    class="euiBadge__text"
+                  >
+                    Last available minor
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="htmlId"
+      class="euiAccordion__childWrapper"
+      id="v4.8.0"
+      role="region"
+      tabindex="-1"
+    >
+      <div>
+        <div
+          class="euiAccordion__padding--l"
+        >
+          <dl
+            class="euiDescriptionList euiDescriptionList--row"
+          >
+            <dt
+              class="euiDescriptionList__title"
+            >
+              Published
+            </dt>
+            <dd
+              class="euiDescriptionList__description"
+            >
+              Sep 25, 2023 @ 14:03:40.816
+            </dd>
+          </dl>
+          <div
+            class="euiSpacer euiSpacer--l"
+          />
+          <div
+            class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--directionRow euiFlexGroup--wrap"
+          >
+            <div
+              class="euiFlexItem euiFlexItem--flexGrowZero"
+              style="max-width: max-content;"
+            >
+              <a
+                class="euiLink euiLink--primary"
+                href="https://documentation.wazuh.com/current/release-notes/release-4-8-0.html"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Release notes
+                <span
+                  aria-label="External link"
+                  class="euiLink__externalIcon"
+                  data-euiicon-type="popout"
+                />
+                <span
+                  class="euiScreenReaderOnly"
+                >
+                  (opens in a new tab or window)
+                </span>
+              </a>
+            </div>
+            <div
+              class="euiFlexItem euiFlexItem--flexGrowZero"
+              style="max-width: max-content;"
+            >
+              <a
+                class="euiLink euiLink--primary"
+                href="https://documentation.wazuh.com/4.8/upgrade-guide/index.html"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Upgrade guide
+                <span
+                  aria-label="External link"
+                  class="euiLink__externalIcon"
+                  data-euiicon-type="popout"
+                />
+                <span
+                  class="euiScreenReaderOnly"
+                >
+                  (opens in a new tab or window)
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="euiSpacer euiSpacer--l"
+          />
+          <div>
+            Description
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
