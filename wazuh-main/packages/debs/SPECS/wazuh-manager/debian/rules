@@ -43,6 +43,7 @@ override_dh_install:
 	make -C src deps TARGET=manager
 	make -j$(JOBS) -C src/ TARGET=manager USE_SELINUX=yes DEBUG=$(DEBUG_ENABLED)
 
+	LD_LIBRARY_PATH="$(CURDIR)/src/build/lib" \
 	USER_LANGUAGE="en" \
 	USER_INSTALL_TYPE="manager" \
 	USER_DIR="$(INSTALLATION_DIR)" \
