@@ -29,7 +29,8 @@ setup_build(){
     sed -i "s:export JOBS=.*:export JOBS=${JOBS}:g" ${sources_dir}/debian/rules
     sed -i "s:export DEBUG_ENABLED=.*:export DEBUG_ENABLED=${debug}:g" ${sources_dir}/debian/rules
     sed -i "s#export PATH=.*#export PATH=${PATH}#g" ${sources_dir}/debian/rules
-    sed -i "s#export LD_LIBRARY_PATH=.*#export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}#g" ${sources_dir}/debian/rules
+    # NOTE: Do NOT override LD_LIBRARY_PATH here — it is set correctly in debian/rules for the build.
+    # sed -i "s#export LD_LIBRARY_PATH=.*#export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}#g" ${sources_dir}/debian/rules
     sed -i "s#export CC.*#export CC=${CC}#g" ${sources_dir}/debian/rules
     sed -i "s#export CXX.*#export CXX=${CXX}#g" ${sources_dir}/debian/rules
     sed -i "s:export INSTALLATION_DIR=.*:export INSTALLATION_DIR=${INSTALLATION_PATH}:g" ${sources_dir}/debian/rules
